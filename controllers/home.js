@@ -25,5 +25,6 @@ exports.redirect = (req, res) => {
   const redirectUrl = `http://${urlPath}`;
 
   console.log('redirectUrl', redirectUrl);
-  res.redirect(redirectUrl);
+  // res.redirect(redirectUrl);
+  res.send(`the footer should go here ${redirectUrl}`);
 };
