@@ -24,5 +24,6 @@ exports.redirect = (req, res) => {
   const urlPath = path.join(awsUrl, partnerId, file);
   const redirectUrl = `http://${urlPath}`;
 
+  console.log('redirectUrl', redirectUrl);
   res.redirect(redirectUrl);
 };
