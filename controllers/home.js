@@ -19,8 +19,6 @@ exports.index = (req, res) => {
 };
 
 exports.redirect = (req, res) => {
-  // headers.get('ODC-PARTNER-ID');
-
   const file = req.query.file || 'footer.html';
   const partnerId = req.headers['odc-partner-id'] || '1234-1234-9999';
   const urlPath = path.join(awsUrl, partnerId, file);
